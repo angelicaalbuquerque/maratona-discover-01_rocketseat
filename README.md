@@ -3,7 +3,7 @@
 </div>
 
 <h2 align="center">
-   Maratona Discovery 01 | <img alt="badge rocketseat" align="center" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/d369e43d97e48a84cda8328adbd77b1ba280ebbf/badges/rocketseat.svg">
+   Maratona Discover 01 | <img alt="badge rocketseat" align="center" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/d369e43d97e48a84cda8328adbd77b1ba280ebbf/badges/rocketseat.svg">
 </h2>
 
 <p align="center">
