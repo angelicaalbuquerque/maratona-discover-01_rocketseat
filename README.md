@@ -80,7 +80,8 @@ Você pode visualizar o layout do projeto através [deste link](https://www.figm
 
 As anotações das aulas estão disponíveis abaixo:
 
-- [Aula 01](https://www.notion.so/Aula-01-45744a4c8a0c455eaa70fcb3e0c9f79c).
+- [Aula 01](https://www.notion.so/Aula-01-45744a4c8a0c455eaa70fcb3e0c9f79c);
+- [Aula 02](https://www.notion.so/maykbrito/Aula-02-e96de013548b42b58f5bee3c803c3a5c).
 
 ## 📬 Entre em contato!
 
