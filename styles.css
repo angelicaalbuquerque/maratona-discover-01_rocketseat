@@ -75,6 +75,11 @@ header {
   color: white;
 }
 
+/* Table ====== */
+#data-table {
+  width: 100%;
+}
+
 /* Footer ====== */
 footer {
   text-align: center;
