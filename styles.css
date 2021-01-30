@@ -82,6 +82,11 @@ header {
   color: #969cb3;
 }
 
+table thead tr th:first-child,
+table tbody tr td:first-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
 table th {
   background: white;
   font-weight: normal;
@@ -89,15 +94,18 @@ table th {
   text-align: left;
 }
 
+table tr {
+  opacity: 0.7;
+}
+
+table tr:hover {
+  opacity: 1;
+}
+
 table td {
   background: white;
   padding: 1rem 2rem;
   font-weight: normal;
-}
-
-table thead tr th:first-child,
-table tbody tr td:first-child {
-  border-radius: 0.25rem 0 0 0.25rem;
 }
 
 /* Footer ====== */
