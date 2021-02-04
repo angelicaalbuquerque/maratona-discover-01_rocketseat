@@ -48,7 +48,7 @@ Lecionada por Mayk Brito, a "Primeira Edição: Front-end do zero" ocorreu onlin
 </details>
 
 <details>
-  <summary>Aula 02 | Finalização do HTML + CSS</summary>
+  <summary>Aula 02 | Finalização do HTML + CSS ✔️</summary>
 
 - Vamos adicionar detalhes mais elegantes, como imagens, acessibilidade e disposição dos elementos na página. Finalizaremos o HTML e o CSS da nossa aplicação.
 
@@ -56,6 +56,8 @@ Lecionada por Mayk Brito, a "Primeira Edição: Front-end do zero" ocorreu onlin
 
 <details>
   <summary>Aula 03 | Adicionando JavaScript e finalizando a aplicação</summary>
+
+- Nessa aula deixaremos a nossa aplicação funcional! Aplicaremos a linguagem JavaScript e faremos nosso programa ter funcionalidades como calcular as entradas e saídas, adicionar e remover uma transação e salvar tudo no navegador.
 
 </details>
 
@@ -71,6 +73,8 @@ Lecionada por Mayk Brito, a "Primeira Edição: Front-end do zero" ocorreu onlin
 </div>
 
 Nessa primeira edição, nós construimos a **dev.finance$**, uma aplicação financeira para Web para treinar habilidades com ferramentas como JavaScript, CSS, HTML.
+
+Veja o resultado [aqui](https://angelicaalbuquerque.github.io/maratona-discover-01_rocketseat/).
 
 ## 🔖 Layout
 
