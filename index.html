@@ -133,7 +133,11 @@
               </div>
 
               <div class="input-group actions">
-                <a href="#" class="button cancel">Cancelar</a>
+                <a 
+                href="#"
+                class="button cancel"
+                onclick="Modal.close()"
+                >Cancelar</a>
                 <button type="submit">Salvar</button>
               </div>
 
@@ -147,15 +151,20 @@
     </footer>
 
     <script>
-      Modal = {
+      const Modal = {
         open() {
           //Abrir Modal
           //Adicionar a classe active ao Modal
-          alert('Abriu o modal')
+          document
+            .querySelector('.modal-overlay')
+            .classList.add('active')
         },
         close() {
           //Fechar o Modal
           //Remover a classe active do Modal
+          document
+            .querySelector('.modal-overlay')
+            .classList.remove('active')
         }
       }
     </script>
