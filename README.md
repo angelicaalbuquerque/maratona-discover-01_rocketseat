@@ -64,6 +64,7 @@ Lecionada por Mayk Brito, a "Primeira Edição: Front-end do zero" ocorreu onlin
 <details>
   <summary>Aula 04 | Aula de Encerramento</summary>
 
+- Perguntas e respostas, quais os próximos passos para continuar evoluindo em 2021 e sorteio exclusivo de uma bolsa de estudos integral para quem chegou até o fim.
 </details>
 
 ## 💻 Projeto
@@ -85,7 +86,8 @@ Você pode visualizar o layout do projeto através [deste link](https://www.figm
 As anotações das aulas estão disponíveis abaixo:
 
 - [Aula 01](https://www.notion.so/Aula-01-45744a4c8a0c455eaa70fcb3e0c9f79c);
-- [Aula 02](https://www.notion.so/maykbrito/Aula-02-e96de013548b42b58f5bee3c803c3a5c).
+- [Aula 02](https://www.notion.so/maykbrito/Aula-02-e96de013548b42b58f5bee3c803c3a5c);
+- [Aula 03](https://www.notion.so/Aula-03-a075f6aa504c4f52af7acb3ac6345c01).
 
 ## 📬 Entre em contato!
 
