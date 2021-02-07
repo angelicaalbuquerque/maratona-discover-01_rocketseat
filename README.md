@@ -55,7 +55,7 @@ Lecionada por Mayk Brito, a "Primeira Edição: Front-end do zero" ocorreu onlin
 </details>
 
 <details>
-  <summary>Aula 03 | Adicionando JavaScript e finalizando a aplicação</summary>
+  <summary>Aula 03 | Adicionando JavaScript e finalizando a aplicação ⚒️</summary>
 
 - Nessa aula deixaremos a nossa aplicação funcional! Aplicaremos a linguagem JavaScript e faremos nosso programa ter funcionalidades como calcular as entradas e saídas, adicionar e remover uma transação e salvar tudo no navegador.
 
