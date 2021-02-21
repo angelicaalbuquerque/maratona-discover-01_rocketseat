@@ -14,3 +14,16 @@ const Modal = {
       .classList.remove('active')
   }
 }
+
+// Eu preciso somar as entradas; depois preciso somar as saídas e remover das entradas o valor das saídas. Assim, terei o total.
+const Transaction = {
+  incomes() {
+    //somar as entradas
+  },
+  expenses() {
+    //somar as saídas
+  },
+  total() {
+    //entradas - saídas
+  }
+}
