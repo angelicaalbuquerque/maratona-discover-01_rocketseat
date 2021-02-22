@@ -32,10 +32,14 @@ const transactions = [
     description: 'Internet',
     amount: -20000,
     date: '21/02/2021'
+  },
+  {    
+    id: 4,
+    description: 'App',
+    amount: 20000,
+    date: '21/02/2021'
   }
 ]
-
-// Eu preciso somar as entradas; depois preciso somar as saídas e remover das entradas o valor das saídas. Assim, terei o total.
 
 const Transaction = {
   incomes() {
@@ -48,3 +52,32 @@ const Transaction = {
     //entradas - saídas
   }
 }
+
+// TODO - Eu preciso substituir os dados do HTML com os dados do JavaScript
+const DOM = {
+
+  transactionsContainer: document.querySelector('#data-table tbody'),
+
+  addTransaction(transaction, index) {
+    const tr = document.createElement('tr')
+    tr.innerHTML = DOM.innerHTMLTransaction(transaction)
+
+    DOM.transactionsContainer.appendChild(tr)
+  },
+  innerHTMLTransaction(transaction) {
+    const html = `
+        <td class="description">${transaction.description}</td>
+        <td class="expense">${transaction.amount}</td>
+        <td class="date">${transaction.date}</td>
+        <td>
+          <img src="assets/minus.svg" alt="remover transação">
+        </td>
+    `
+    return html
+  }
+}
+
+transactions.forEach(function(transaction) {
+  DOM.addTransaction(transaction)
+})
+
