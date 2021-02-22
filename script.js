@@ -19,7 +19,7 @@ const transactions = [
   {
     id: 1,
     description: 'Luz',
-    amount: -50000,
+    amount: -50001,
     date: '21/02/2021'
   }, 
   {    
@@ -30,13 +30,13 @@ const transactions = [
   {    
     id: 3,
     description: 'Internet',
-    amount: -20000,
+    amount: -20012,
     date: '21/02/2021'
   },
   {    
     id: 4,
     description: 'App',
-    amount: 20000,
+    amount: 200000,
     date: '21/02/2021'
   }
 ]
@@ -44,13 +44,8 @@ const transactions = [
 const Transaction = {
   incomes() {
     let income = 0;
-
-    //pegar todas as transações;
-    //para cada transação,
     transactions.forEach(transaction => {
-      //se ela for maior que zero
       if (transaction.amount > 0) {
-        // somar a uma variável e retorná-la
         income += transaction.amount;
       }
     })
@@ -58,20 +53,15 @@ const Transaction = {
   },
   expenses() {
     let expense = 0;
-
-    //pegar todas as transações;
-    //para cada transação,
     transactions.forEach(transaction => {
-      //se ela for menor que zero
       if (transaction.amount < 0) {
-        // somar a uma variável e retorná-la
         expense += transaction.amount;
       }
     })
     return expense;
   },
   total() {
-    return "Discover"
+    return Transaction.incomes() + Transaction.expenses();
   }
 }
 
@@ -104,13 +94,13 @@ const DOM = {
   updateBalance() {
     document
       .getElementById('incomeDisplay')
-      .innerHTML = Transaction.incomes()
+      .innerHTML = Utils.formatCurrency(Transaction.incomes())
     document
       .getElementById('expenseDisplay')
-      .innerHTML = Transaction.expenses()
+      .innerHTML = Utils.formatCurrency(Transaction.expenses())
     document
       .getElementById('totalDisplay')
-      .innerHTML = Transaction.total()
+      .innerHTML = Utils.formatCurrency(Transaction.total())
   }
 }
 
