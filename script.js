@@ -119,6 +119,18 @@ const DOM = {
 }
 
 const Utils = {
+  formatAmount(value) {
+    // value = value * 100
+    // return Math.round(value)
+    value = Number(value) * 100
+    console.log(Number(value))
+  },
+
+  formatDate(date) {
+    const splittedDate = date.split("-")
+    return `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}`
+  },
+
   formatCurrency(value) {
     const signal = Number(value) < 0 ? "-" : ""
 
@@ -157,19 +169,32 @@ const Form = {
           throw new Error("Por favor, preencha todos os campos.") 
         }
   },
-  formatData() {
-    console.log('formatar dados')
+
+  formatValues() {
+    let { description, amount, date } = Form.getValues()
+
+    amount = Utils.formatAmount(amount)
+
+    date = Utils.formatDate(date)
+
+    return {
+      description,
+      amount,
+      date
+    }
   },
+
+
 
   submit(event) {
     event.preventDefault()
 
     try {
       //verificar se todas as informações foram preenchidas
-      Form.validateFields()
+      // Form.validateFields()
 
       //formatar os dados para salvar
-      Form.formatData()
+      Form.formatValues()
 
       //salvar
       //apagar os dados do formulário
