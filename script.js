@@ -53,9 +53,7 @@ const Transaction = {
   }
 }
 
-// TODO - Eu preciso substituir os dados do HTML com os dados do JavaScript
 const DOM = {
-
   transactionsContainer: document.querySelector('#data-table tbody'),
 
   addTransaction(transaction, index) {
@@ -65,9 +63,11 @@ const DOM = {
     DOM.transactionsContainer.appendChild(tr)
   },
   innerHTMLTransaction(transaction) {
+    const CSSclass = transaction.amount > 0 ? "income" : "expense"
+
     const html = `
         <td class="description">${transaction.description}</td>
-        <td class="expense">${transaction.amount}</td>
+        <td class="${CSSclass}">${transaction.amount}</td>
         <td class="date">${transaction.date}</td>
         <td>
           <img src="assets/minus.svg" alt="remover transação">
