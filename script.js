@@ -135,6 +135,33 @@ const Utils = {
   }
 }
 
+const Form = {
+
+  validateFields() {
+    console.log('validar os campos')
+  },
+  formatData() {
+    console.log('formatar dados')
+  },
+
+  submit(event) {
+    event.preventDefault()
+
+    //verificar se todas as informações foram preenchidas
+    Form.validateFields()
+
+    //formatar os dados para salvar
+    Form.formatData()
+    
+    //salvar
+    //apagar os dados do formulário
+    //modal fechar
+    //atualizar a aplicação
+
+
+  }
+}
+
 const App = {
   init() {
 
@@ -151,9 +178,6 @@ const App = {
 }
 
 App.init()
-
-Transaction.remove()
-
 
 
 
