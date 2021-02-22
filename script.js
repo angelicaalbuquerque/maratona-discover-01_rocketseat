@@ -43,10 +43,32 @@ const transactions = [
 
 const Transaction = {
   incomes() {
-    return "Cheguei"
+    let income = 0;
+
+    //pegar todas as transações;
+    //para cada transação,
+    transactions.forEach(transaction => {
+      //se ela for maior que zero
+      if (transaction.amount > 0) {
+        // somar a uma variável e retorná-la
+        income += transaction.amount;
+      }
+    })
+    return income;
   },
   expenses() {
-    return "Aqui"
+    let expense = 0;
+
+    //pegar todas as transações;
+    //para cada transação,
+    transactions.forEach(transaction => {
+      //se ela for menor que zero
+      if (transaction.amount < 0) {
+        // somar a uma variável e retorná-la
+        expense += transaction.amount;
+      }
+    })
+    return expense;
   },
   total() {
     return "Discover"
