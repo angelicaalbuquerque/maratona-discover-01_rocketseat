@@ -62,6 +62,7 @@ const DOM = {
 
     DOM.transactionsContainer.appendChild(tr)
   },
+
   innerHTMLTransaction(transaction) {
     const CSSclass = transaction.amount > 0 ? "income" : "expense"
 
@@ -76,6 +77,18 @@ const DOM = {
         </td>
     `
     return html
+  },
+
+  updateBalance() {
+    document
+      .getElementById('incomeDisplay')
+      .innerHTML = "Soma das entradas"
+    document
+      .getElementById('expenseDisplay')
+      .innerHTML = "Soma das saídas"
+    document
+      .getElementById('totalDisplay')
+      .innerHTML = "Saldo"
   }
 }
 
@@ -100,3 +113,4 @@ transactions.forEach(function(transaction) {
   DOM.addTransaction(transaction)
 })
 
+DOM.updateBalance()
