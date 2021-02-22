@@ -184,19 +184,23 @@ const Form = {
     }
   },
 
-
+  saveTransaction(transaction) {
+    Transaction.add(transaction)
+  },
 
   submit(event) {
     event.preventDefault()
 
     try {
       //verificar se todas as informações foram preenchidas
-      // Form.validateFields()
+      Form.validateFields()
 
       //formatar os dados para salvar
-      Form.formatValues()
+      const transaction = Form.formatValues()
 
       //salvar
+      Form.saveTransaction()
+      
       //apagar os dados do formulário
       //modal fechar
       //atualizar a aplicação
