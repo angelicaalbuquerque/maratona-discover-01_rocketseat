@@ -225,9 +225,10 @@ const Form = {
 const App = {
   init() {
 
-    Transaction.all.forEach(transaction => {
-      DOM.addTransaction(transaction)
-    })
+    // Transaction.all.forEach(function(transaction, index) {
+    //   DOM.addTransaction(transaction, index)
+    // })
+    Transaction.all.forEach(DOM.addTransaction)
     
     DOM.updateBalance()
   },
